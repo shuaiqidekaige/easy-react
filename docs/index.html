@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>easy react</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    hello world
+    <header>
+        <span class="logoLink">easy react</span>
+        <a href="https://bb-color.netlify.com/">组件</a>
+    </header>
+    <main>
+        <section id="moveWrap" style="transform: translate(-49.4135px, -5.83224px);">
+            <div class="logo">easy react</div>
+        </section>
+        <section class="describeWrap">
+            <h1>一款轻量级的React UI库</h1>
+            <div class="jumpBtn">
+                <a href="https://bb-color.netlify.com/" class="startBtn">开始使用</a>
+                <a href="https://github.com/BB-color/BB-color" class="gitBtn" target="_blank">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript">
+        document.onmousemove = function (e) {
+            e = e || window.event;
+            var x = 0.5 - e.clientX / document.body.offsetWidth;
+            var y = 0.5 - e.clientY / document.body.offsetHeight;
+            document.getElementById("moveWrap").style.transform = "translate(" + x * 100 + "px," + y * 100 + "px)";
+        };
+    </script>
+
+
 </body>
+
 </html>
